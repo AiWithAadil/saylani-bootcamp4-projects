@@ -1,6 +1,6 @@
-# Saylani Bootcamp 4 - AWS Data Engineering Projects
+# Saylani Bootcamp 4 - Data Engineering Projects
 
-This repository contains AWS data engineering projects completed as part of Saylani Bootcamp 4. The projects demonstrate end-to-end data pipeline implementation using various AWS services.
+This repository contains data engineering projects completed as part of Saylani Bootcamp 4. The projects demonstrate end-to-end data pipeline implementation using various cloud platforms and data warehousing technologies.
 
 ## Projects Overview
 
@@ -35,6 +35,23 @@ An advanced data pipeline featuring automated data ingestion from Kaggle, compre
 
 ---
 
+### [Bootcamp Task 3](./bootcamp-task3/)
+**Supply Chain Analytics with Snowflake**
+
+A comprehensive supply chain analytics solution featuring star schema data modeling, advanced SQL analytics, and automated change data capture (CDC) using Snowflake.
+
+**Tech Stack**: Snowflake, SQL, Streams & Tasks, Stored Procedures, Views
+
+**Key Features**:
+- Star schema dimensional modeling
+- Advanced SQL analytics and window functions
+- Automated change tracking with Streams and Tasks
+- Stored procedures for data management
+- Year-over-year trend analysis
+- Consolidated performance views
+
+---
+
 ## Repository Structure
 
 ```
@@ -44,25 +61,33 @@ saylani-bootcamp4-projects/
 │   ├── RedShift-sql.sql
 │   └── [screenshots]
 │
-└── Bootcamp-task2/          # Advanced ETL pipeline
-    ├── Architecture.png
-    ├── Scripts/
-    │   ├── DataInjestion.py
-    │   ├── Transformation.py
-    │   └── SQLQuery.sql
-    ├── ScreenShorts/
-    └── ProjectDocumentation.docx
+├── Bootcamp-task2/          # Advanced ETL pipeline
+│   ├── Architecture.png
+│   ├── Scripts/
+│   │   ├── DataInjestion.py
+│   │   ├── Transformation.py
+│   │   └── SQLQuery.sql
+│   ├── ScreenShorts/
+│   └── ProjectDocumentation.docx
+│
+└── bootcamp-task3/          # Supply chain analytics
+    ├── architecture.pdf
+    ├── DataCoSupplyChainDataset.xlsx
+    ├── analytics.sql
+    └── TaskQuery.sql
 ```
 
 ## Technologies Used
 
-- **Cloud Platform**: Amazon Web Services (AWS)
-- **Data Storage**: Amazon S3, Amazon RedShift
+- **Cloud Platforms**: Amazon Web Services (AWS), Snowflake
+- **Data Storage**: Amazon S3, Amazon RedShift, Snowflake
 - **ETL**: AWS Glue, PySpark
 - **Orchestration**: AWS Step Functions
 - **Visualization**: Amazon QuickSight
 - **Monitoring**: Amazon CloudWatch
 - **Data Source**: Kaggle API
+- **Advanced SQL**: Stored Procedures, Views, Streams, Tasks
+- **CDC**: Snowflake Streams and Tasks
 
 ## Learning Outcomes
 
@@ -70,11 +95,15 @@ Through these projects, the following skills were developed:
 - Designing and implementing scalable data pipelines
 - Working with AWS data engineering services
 - ETL development using PySpark
-- Data modeling and warehousing
+- Data modeling and warehousing (Star Schema)
 - Workflow orchestration and automation
 - Data quality validation
 - Performance optimization techniques
 - Cloud infrastructure management
+- Advanced SQL analytics and window functions
+- Implementing change data capture (CDC) systems
+- Building stored procedures and views
+- Working with Snowflake platform features
 
 ## Author
 

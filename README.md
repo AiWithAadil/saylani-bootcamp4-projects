@@ -52,6 +52,23 @@ A comprehensive supply chain analytics solution featuring star schema data model
 
 ---
 
+### [Bootcamp Task 4](./bootcamp-task4/)
+**Automated Web Scraping with AWS Lambda**
+
+A serverless web scraping solution that automatically extracts mutual fund NAV data from MUFAP website daily and stores it in Amazon S3.
+
+**Tech Stack**: AWS Lambda, Lambda Layers, Amazon S3, EventBridge, Python (BeautifulSoup4, requests, boto3)
+
+**Key Features**:
+- Serverless web scraping with Lambda
+- Automated daily scheduling with EventBridge
+- HTML parsing with BeautifulSoup
+- CSV data generation and S3 storage
+- Lambda Layers for dependency management
+- Cost-effective data collection
+
+---
+
 ## Repository Structure
 
 ```
@@ -70,24 +87,32 @@ saylani-bootcamp4-projects/
 │   ├── ScreenShorts/
 │   └── ProjectDocumentation.docx
 │
-└── bootcamp-task3/          # Supply chain analytics
-    ├── architecture.pdf
-    ├── DataCoSupplyChainDataset.xlsx
-    ├── analytics.sql
-    └── TaskQuery.sql
+├── bootcamp-task3/          # Supply chain analytics
+│   ├── architecture.pdf
+│   ├── DataCoSupplyChainDataset.xlsx
+│   ├── analytics.sql
+│   └── TaskQuery.sql
+│
+└── bootcamp-task4/          # Serverless web scraping
+    ├── Diagram.png
+    ├── lambda.py
+    ├── mufap_nav_2026-03-03.csv
+    └── ScreenShorts/
 ```
 
 ## Technologies Used
 
 - **Cloud Platforms**: Amazon Web Services (AWS), Snowflake
 - **Data Storage**: Amazon S3, Amazon RedShift, Snowflake
+- **Compute**: AWS Lambda (Serverless)
 - **ETL**: AWS Glue, PySpark
-- **Orchestration**: AWS Step Functions
+- **Orchestration**: AWS Step Functions, EventBridge
 - **Visualization**: Amazon QuickSight
 - **Monitoring**: Amazon CloudWatch
-- **Data Source**: Kaggle API
+- **Data Sources**: Kaggle API, Web Scraping (MUFAP)
 - **Advanced SQL**: Stored Procedures, Views, Streams, Tasks
 - **CDC**: Snowflake Streams and Tasks
+- **Python Libraries**: BeautifulSoup4, requests, boto3, PySpark
 
 ## Learning Outcomes
 
@@ -104,6 +129,10 @@ Through these projects, the following skills were developed:
 - Implementing change data capture (CDC) systems
 - Building stored procedures and views
 - Working with Snowflake platform features
+- Serverless computing with AWS Lambda
+- Web scraping with BeautifulSoup and requests
+- Automated scheduling with EventBridge
+- Lambda Layers for dependency management
 
 ## Author
 
